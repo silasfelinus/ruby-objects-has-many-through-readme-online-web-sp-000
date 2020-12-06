@@ -1,5 +1,5 @@
 class Waiter
-  attr_accessor :name, :years_experience, :best_tip, :meals, :best_tipper
+  attr_accessor :name, :years_experience
   @@all = []
 
   def initialize(name, years_experience)
@@ -17,7 +17,7 @@ class Waiter
     @@all
   end
 
-  def new_meal(customer, total, tip)
+  def new_meal(customer, total, tip=0)
     new_meal = Meal.new(customer, self, total, tip)
     @meals << new_meal
     @customers << customer
