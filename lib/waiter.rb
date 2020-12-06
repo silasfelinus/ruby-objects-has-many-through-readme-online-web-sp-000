@@ -18,14 +18,7 @@ class Waiter
   end
 
   def new_meal(customer, total, tip=0)
-    new_meal = Meal.new(customer, self, total, tip)
-    @meals << new_meal
-    @customers << customer
-    if tip > best_tip
-      best_tip = tip
-      best_tipper = customer
-    end
-    new_meal
+    Meal.new(customer, self, total, tip)
   end
 
   def meals
