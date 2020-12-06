@@ -1,5 +1,5 @@
 class Waiter
-  attr_accessor :name, :years_experience, :best_tip, :best_tipper
+  attr_accessor :name, :years_experience, :best_tip, :meals, :best_tipper
   @@all = []
 
   def initialize(name, years_experience)
@@ -9,7 +9,7 @@ class Waiter
     @customers = []
     @meals = []
     @best_tip = 0
-    @best_customer = ""
+    @best_tipper = ""
 
   end
 
@@ -30,6 +30,10 @@ class Waiter
 
   def meals
     @meals
+  end
+
+  def best_tipper
+    @best_tipper
   end
 
 
