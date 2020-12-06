@@ -7,3 +7,5 @@ class Meal
     @total = total
     @tip = tip
   end
+
+end
