@@ -19,5 +19,8 @@ class Customer
     new_meal
   end
 
+    def meals
+      @meals
+    end
 
 end
